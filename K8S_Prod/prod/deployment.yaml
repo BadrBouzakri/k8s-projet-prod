@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: foot-app
-        image: bouzakri/foot_app:v.38.0
+        image: bouzakri/foot_app:v.39.0
         ports:
         - containerPort: 5000
         resources:
@@ -31,4 +31,4 @@ spec:
       volumes:
       - name: data-volume
         persistentVolumeClaim:
-          claimName: foot-app-pvc-ebs
+          claimName: foot-app-pvc-ebs-02
